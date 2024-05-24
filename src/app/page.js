@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import page from "./page.svg";
+import page from "./page2.svg";
 
-const text = "Kathleen Tillman - kathleen.tillman.0@gmail.com - more to come"
+const text = "Welcome! this is my personal site and it's under construction. for now you can find me at github.com/saecula or say hello at hi@saecula.io."
 
 const Home = () => {
     return (<main className={styles.main}>
-        <Image src={page} alt={text} width={300} height={300} />
+        <Image src={page} alt={text} height={650} />
     </main>)
 }
 
