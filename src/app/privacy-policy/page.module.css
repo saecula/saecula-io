@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    line-height: 20px;
+    justify-content: space-around;
+}
+
+.item {
+    margin-bottom: 1em;
+}
