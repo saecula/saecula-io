@@ -6,7 +6,7 @@ const text = "Welcome! this is my personal site and it's under construction. for
 
 const Home = () => {
     return (<main className={styles.main}>
-        <Image src={page} alt={text} height={650} />
+\        <Image src={page} alt={text} height={700} />
     </main>)
 }
 
