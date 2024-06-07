@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return (
-    <div className="container">
+    <div className="text">
       <div className="item">
         {
           "I'm adding the ability to sign in to my site using Oauth (like Google and maybe Apple) solely for the fun of learning about auth."
