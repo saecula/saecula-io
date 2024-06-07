@@ -1,0 +1,23 @@
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header {
+  background-color: var(--panel-color);
+}
+
+.footer {
+  border-top: var(--border);
+  color: var(--subtext-color);
+}
+
+.group {
+  display: flex;
+}
+
+.group > * {
+  margin: auto 0.5rem;
+}

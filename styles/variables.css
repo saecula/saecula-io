@@ -1,0 +1,35 @@
+:root {
+  --subtext-color: #4e4e4e;
+
+  --color-light: #181a1b;
+  --color-dark: #e3e3e3;
+
+  --accent-color-light: #456aff;
+  --accent-color-dark: #0b2db7;
+
+  /* 
+  --accent-color-light: #879dff;
+  --accent-color-dark: #26336b; */
+
+  --background-color-light: #fefefe;
+  --background-color-dark: #121212;
+
+  --panel-color-light: #ededed52;
+  --panel-color-dark: #ededed0a;
+
+  --color: var(--color-light);
+  --accent-color: var(--accent-color-light);
+  --background-color: var(--background-color-light);
+  --panel-color: var(--panel-color-light);
+  --border: 2px solid var(--accent-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: var(--color-dark);
+    --accent-color: var(--accent-color-dark);
+    --background-color: var(--background-color-dark);
+    --panel-color: var(--panel-color-dark);
+    --border: 2px solid var(--accent-color-dark);
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created for saecula.io with Inkscape (http://www.inkscape.org/) -->
+<svg width="512" height="512" version="1.1" viewBox="0 0 135.467 135.467" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+		path, rect {
+		stroke: #181a1b;
+		}
+		@media (prefers-color-scheme: dark) {
+		path, rect {
+		stroke: #e3e3e3;
+		}
+		}
+	</style>
+	<g transform="translate(41.2636 24.2912)">
+		<g transform="matrix(2.83876 0 0 2.83876 -38.6924 -20.3126)" fill="none">
+			<path d="m10.9177 10.2129c6.35477 8.28662 12.7096 16.5733 19.0643 24.8599h6.40561c-6.35477-8.28662-12.7096-16.5733-19.0643-24.8599z" stroke-linecap="round" stroke-width="3.8" />
+			<path d="m20.5887 24.1017-9.64979 11.5097 2.34515-3.37e-4 8.13981-9.95839m4.19908-4.99148 9.02593-10.7832-1.91444 3e-6 -8.0256 9.51459" stroke-linecap="square" stroke-width="2.75167" />
+			<rect transform="matrix(.352266 0 0 .352266 13.63 7.15543)" x="-38.1169" y="-21.1445" width="129.173" height="129.173" rx="11.3685" ry="11.3685" stroke-linecap="square" stroke-width="6.29344" />
+		</g>
+	</g>
+</svg>
