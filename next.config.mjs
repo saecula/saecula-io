@@ -1,6 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
+import analyzer from '@next/bundle-analyzer';
+
+const config = {
+  output: 'export',
+  images: {
+    // not currently needed, but who knows
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'saecula.io',
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+const withBundleAnalyzer = analyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+export default withBundleAnalyzer(config);

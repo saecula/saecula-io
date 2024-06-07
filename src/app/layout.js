@@ -1,17 +1,41 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import React from 'react';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+import Image from 'next/image';
+import icon from './icon.svg';
+
+import './css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "saecula",
+  title: 'saecula',
   description: "this is kashi's website",
 };
 
-export default function RootLayout({ children }) {
+const Head = () => (
+  <head>
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+  </head>
+);
+
+const Header = () => (
+  <header>
+    <a href="/">
+      <Image src={icon} height={20} />
+    </a>
+  </header>
+);
+
+export default ({ children }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head />
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
-}
+};

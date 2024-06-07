@@ -1,4 +1,4 @@
-const html = `<div data-custom-class="body">
+const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div style="text-align: left;">
         <div data-custom-class="title" style="line-height: 1;">
             <bdt class="block-component"><span style="font-size: 19px;"></bdt>
@@ -1615,7 +1615,7 @@ const html = `<div data-custom-class="body">
         without prior notice.</div>
     <div style="line-height: 1.5; text-align: left;"><br></div>
     <div data-custom-class="heading_1" id="disclaimer" style="line-height: 1.5; text-align: left;"><span
-            style="font-size: 19px; color: rgb(0, 0, 0);"><strong><span
+            style="font-size: 19px;"><strong><span
                     style="line-height: 24.5333px; font-size: 19px;"><strong><span
                             style="line-height: 115%; font-family: Arial; font-size: 19px;"><strong><span
                                     style="line-height: 115%; font-family: Arial; font-size: 19px;">17.</span></strong></span></strong></span>
@@ -1887,6 +1887,6 @@ const html = `<div data-custom-class="body">
         font-family: Arial;
     }
 </style>
-</div>`
+</div>`;
 
 export default html;

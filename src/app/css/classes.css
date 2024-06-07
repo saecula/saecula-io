@@ -1,11 +1,11 @@
-.container {
+  .container {
     display: flex;
     flex-direction: column;
-    padding: 3em;
+    padding: var(--padding-container);
     line-height: 20px;
     justify-content: space-around;
-}
-
-.item {
+  }
+  
+  .item {
     margin-bottom: 1em;
-}
+  }

@@ -1,13 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import intro from "./intro.svg";
+import React from 'react';
+import Image from 'next/image';
+import intro from './svg/intro.svg';
 
-const text = "Welcome! this is my personal site and it's under construction. for now you can find me at github.com/saecula or say hello at hi@saecula.io."
+const text =
+  "Welcome! this is my personal site and it's under construction. for now you can find me at github.com/saecula or say hello at hi@saecula.io.";
 
-const Home = () => {
-    return (<main className={styles.main}>
-       <Image src={intro} alt={text} height={600} />
-    </main>)
-}
-
-export default Home;
+export default () => {
+  return (
+    <main>
+      <Image src={intro} alt={text} height={600} />
+    </main>
+  );
+};
