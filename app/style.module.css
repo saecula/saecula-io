@@ -1,21 +1,26 @@
-.splash {
+.page {
   font-size: 1.5rem;
-  min-height: 75vh;
-  margin: 3rem 0 0;
+  max-width: 900px;
+  margin: 2rem auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   overflow: hidden;
   justify-content: center;
 }
-
-.splash > * {
-  color: #f0f0f0;
+.page > * {
+  height: 40%;
   margin: 1rem;
-  padding: 5rem 10rem;
-  border-radius: 8px;
-  background-color: #26336b;
+  padding: 5rem;
+  border: 1px solid #26336b;
+  border-radius: 4px;
+  color: #f0f0f0;
   display: flex;
-  flex-basis: 45%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.links {
+  padding: 3rem 2rem;
+  border: none;
+  justify-content: space-around;
 }
