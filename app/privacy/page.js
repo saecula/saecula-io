@@ -5,22 +5,22 @@ export default () => {
     <div className="text-container">
       <div className="text-block">
         {
-          "I'm adding Oauth to this site solely for the fun of learning about auth. (It also might make site security easier the line.)"
+          "I'll be adding Oauth to this site solely for the fun of learning about auth. It also might make site security easier the line."
         }
       </div>
       <div className="text-block">
         {
-          "If you choose to use it, a user profile will be created, which means the site will store your encrypted email address to provide the server with some minimal object permanence about you, as well as your first name so as to render your account in a way that doesn't look too weird. The site won't store anything else from your remote profile."
+          "If you choose to log in, the site will encrypt and store your email address to identify you, and store your name as a profile label. It won't store anything else."
         }
       </div>
       <div className="text-block">
         {
-          "To give your profile here a real excuse to exist, I'll probably end up making it something you can use to store other information too. But protecting information is hard and I probably suck at it. So if you choose to enter such information, I forbid you to include anything you'd be upset to find had either vanished OR surfaced alongside your photo on the front page of the New York Times."
+          "To give these profiles a real reason to exist, I may  end up letting you save information in it. Protecting information is hard. So if you save anything here, do not include anything you'd be upset to find either gone forever or on the New York Times front page next to a photo of your face."
         }
       </div>
       <div className="text-block">
         {
-          "I have to explain my privacy policy, but you don't have to log in to use the site. You will also be free to delete your profile at any time."
+          'You will also be free to delete your profile and all of its information at any time.'
         }
       </div>
     </div>

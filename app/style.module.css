@@ -1,8 +1,21 @@
-.intro {
+.splash {
+  font-size: 1.5rem;
+  min-height: 75vh;
+  margin: 3rem 0 0;
   display: flex;
-  height: 100%;
-  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.splash > * {
+  color: #f0f0f0;
+  margin: 1rem;
+  padding: 5rem 10rem;
+  border-radius: 8px;
+  background-color: #26336b;
+  display: flex;
+  flex-basis: 45%;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
 }

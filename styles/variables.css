@@ -1,10 +1,11 @@
 :root {
   --color-light: #181a1b;
-  --background-color-light: #edecec;
-  --subtext-color-light: #4e4e4e;
-
   --color-dark: #e3e3e3;
+
+  --background-color-light: #edecec;
   --background-color-dark: #181a1b;
+
+  --subtext-color-light: #4e4e4e;
   --subtext-color-dark: #4e4e4e;
 
   --color: var(--color-light);

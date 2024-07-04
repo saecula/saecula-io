@@ -7,8 +7,11 @@ const altText =
 
 export default () => {
   return (
-    <div className={styles.intro}>
-      <img src="/intro.svg" alt={altText} width={450} height={650} />
+    <div className={styles.splash}>
+      <div>about</div>
+      <div>blog</div>
+      <div>github</div>
+      <div>linkedin</div>
     </div>
   );
 };
