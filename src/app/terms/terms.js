@@ -1870,7 +1870,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
                 </strong></span></strong></div>
 </div>
 </div>
-<style>
+<style type="text/css">
     ul {
         list-style-type: square;
     }

@@ -2,9 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const iconSize = 40;
+
 const HeaderIcon = ({ href, src }) => (
   <Link href={href} target="_blank" rel="noopener noreferrer">
-    <Image src={src} width={27} height={27} />
+    <Image src={src} width={iconSize} height={iconSize} />
   </Link>
 );
 
@@ -12,7 +14,7 @@ const Header = () => (
   <header>
     <div className="header-group-left">
       <Link href="/">
-        <Image src="/mascot.svg" width={30} height={30} />
+        <Image src="/mascot.svg" width={iconSize} height={iconSize} />
       </Link>
     </div>
     <div className="header-group-right">

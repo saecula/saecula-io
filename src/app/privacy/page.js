@@ -5,22 +5,22 @@ export default () => {
     <div className="text-container">
       <div className="text-block">
         {
-          "I'm adding the ability to sign in to my site using Oauth (like Google and maybe Apple) solely for the fun of learning about auth."
+          "I'm adding Oauth to this site solely for the fun of learning about auth. (It also makes it a teeny bit easier to guard against bots.)"
         }
       </div>
       <div className="text-block">
         {
-          "If you choose to log in thusly, I will ask for your email address in order to provide the server with some minimal object permanence about your visits here. I will store these emails in an encrypted form and never share them willingly. I won't look at or store other details in your remote profile."
+          "If you choose to use it, a user profile will be created, which means the site will store your encrypted email address to provide the server with some minimal object permanence about you, as well as your first name so as to render your account in a way that doesn't look too weird. The site won't store anything else from your remote profile."
         }
       </div>
       <div className="text-block">
         {
-          "I might later provide ways for you to add information to your profile here. But protecting information is hard and I probably suck at it. So if you choose to enter such information, I hereby forbid you to include anything you'd be upset to find had a) vanished, b) been shared with your worst enemy, or c) surfaced alongside your name and photo on the front page of the New York Times."
+          "To give your profile here a real excuse to exist, I'll probably end up making it something you can use to store other information too. But protecting information is hard and I probably suck at it. So if you choose to enter such information, I forbid you to include anything you'd be upset to find had either vanished OR surfaced alongside your photo on the front page of the New York Times."
         }
       </div>
       <div className="text-block">
         {
-          "If you hate all of that, never fear, just play around on the site anonymously. Or if you've logged in before and regret it, you can delete your profile and I'll make sure it's gone."
+          "I have to explain my privacy policy, but you don't have to log in to use the site. You will also be free to delete your profile at any time."
         }
       </div>
     </div>
