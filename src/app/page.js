@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { intro } from './svg';
+import styles from './style.module.css';
 
-const text =
-  "Welcome! this is my personal site and it's under construction. for now you can find me at github.com/saecula or say hello at hi@saecula.io.";
+const altText =
+  "Welcome! this is my personal site and it's under construction. for now you can find me at github.com/saecula or say hello at admin@saecula.io.";
 
 export default () => {
   return (
-    <div className="intro">
-      <Image src={intro} alt={text} width={300} height={400} />
+    <div className={styles.intro}>
+      <Image src="/intro.svg" alt={altText} width={450} height={650} />
     </div>
   );
 };
