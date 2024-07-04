@@ -5,7 +5,7 @@ export default () => {
     <div className="text-container">
       <div className="text-block">
         {
-          "I'm adding Oauth to this site solely for the fun of learning about auth. (It also makes it a teeny bit easier to guard against bots.)"
+          "I'm adding Oauth to this site solely for the fun of learning about auth. (It also might make site security easier the line.)"
         }
       </div>
       <div className="text-block">

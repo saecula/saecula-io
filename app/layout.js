@@ -1,10 +1,11 @@
 import React from 'react';
 import { Inter } from 'next/font/google';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './_components/Header';
+import Footer from './_components/Footer';
 
-import './styles';
+import '../styles/variables.css';
+import '../styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

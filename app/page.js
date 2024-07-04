@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './style.module.css';
 
@@ -9,7 +8,7 @@ const altText =
 export default () => {
   return (
     <div className={styles.intro}>
-      <Image src="/intro.svg" alt={altText} width={450} height={650} />
+      <img src="/intro.svg" alt={altText} width={450} height={650} />
     </div>
   );
 };

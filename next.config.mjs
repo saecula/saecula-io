@@ -10,6 +10,7 @@ const config = {
         hostname: 'saecula.io',
       },
     ],
+    dangerouslyAllowSVG: true,
   },
 };
 
