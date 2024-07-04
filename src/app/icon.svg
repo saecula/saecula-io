@@ -10,7 +10,7 @@
       }
       @media (prefers-color-scheme: dark) {
          path {
-         stroke: #c0c0c0;
+         stroke: #e3e3e3;
          }
       }
    </style>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created for http://www.saecula.io with Inkscape (http://www.inkscape.org/) -->
+<svg width="187.738" height="187.738" version="1.1" viewBox="0 0 49.6724 49.6724" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><style>
+      path, circle {
+         stroke: #181a1b;
+         fill: #181a1b;
+      }
+      rect {
+         stroke: #181a1b;
+      }
+      @media (prefers-color-scheme: dark) {
+        path, circle {
+           stroke: #e3e3e3;
+           fill: #e3e3e3;
+         }
+        rect {
+           stroke: #e3e3e3;
+        }
+      }
+</style><g transform="translate(1.45004 1.45004)" stroke-linecap="square"><rect transform="translate(-3.15141 -3.45644)" x="3.81287" y="4.1179" width="45.4494" height="45.4494" rx="4" ry="4" fill="none" stroke="#010101" stroke-width="4.223" style="paint-order:fill markers stroke"/><g transform="matrix(.945705 0 0 .945705 1.25995 1.26658)" stroke="#1a1a1a" stroke-width=".264583"><path d="m7.10467 17.6847h6.91827v22.3457h-6.91827z" vector-effect="non-scaling-stroke" /><circle cx="10.5638" cy="10.7584" r="4.13312" vector-effect="non-scaling-stroke" /><path d="m25.2974 28.8576c0.114769-7.68777 7.72842-6.17665 7.60692-1.43727l7.0762-2.53564c-0.214391-9.43921-12.3939-9.92539-14.6831-3.89191m7.60692 6.42755 7.0762-2.53564v15.1458h-7.0762zm-14.7421-9.73557h7.13517v22.3457h-7.13517z" vector-effect="non-scaling-stroke" /></g></g></svg>

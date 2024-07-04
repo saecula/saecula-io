@@ -12,21 +12,6 @@ body {
   color: var(--color);
 }
 
-header {
-  display: flex;
-  height: var(--header-height);
-  justify-content: space-between;
-  padding: var(--padding-container);
-}
-
-footer {
-  width: 100%;
-  height: var(--footer-height);
-  display: flex;
-  color: var(--subtext-color);
-}
-
-
 main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
@@ -39,5 +24,17 @@ a {
 
 nav {
   display: inline;
+  margin: 1em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  line-height: 20px;
+  justify-content: space-around;
+}
+
+.text-block {
   margin: 1em;
 }
