@@ -10,7 +10,7 @@ const Header = () => (
     <Link href="/">
       <div id="home" className={styles.group}>
         <img src="/mascot.svg" width={iconSize} height={iconSize} />
-        <div>saecula.io</div>
+        <div>{'saecula.io (coming soon)'}</div>
       </div>
     </Link>
     <div id="dummy" className={styles.group}>
