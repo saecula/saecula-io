@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './style.module.css';
 
 const iconSize = 50;
-const writingWidth = 400;
-const writingHeight = 40;
+const writingWidth = 300;
+const writingHeight = 35;
 
 const Icon = ({ href, src }) => (
   <Link href={href} target="_blank" rel="noopener noreferrer">
@@ -23,6 +23,7 @@ export default () => {
           width={writingWidth}
           height={writingHeight + 10}
         />
+        <div style={{ width: writingWidth }} />
       </div>
       <div>
         <img
@@ -31,6 +32,7 @@ export default () => {
           width={writingWidth}
           height={writingHeight}
         />
+        <div style={{ width: writingWidth }} />
       </div>
       <div className={styles.links}>
         <Icon href="https://www.linkedin.com/in/saecula/" src="/in.svg" />
