@@ -5,12 +5,12 @@ export default () => {
     <div className="text-container">
       <div className="text-block">
         {
-          "I'll be adding Oauth to this site solely for the fun of learning about auth. It also might make site security easier the line."
+          "I'll be adding Oauth to this site solely for the fun of learning about auth. It might also help maintain site security later on."
         }
       </div>
       <div className="text-block">
         {
-          "If you choose to log in, the site will encrypt and store your email address to identify you, and store your name as a profile label. It won't store anything else."
+          "If you choose to log in, the site will encrypt and store your email address to identify you, and store your name as a label. It won't store anything else."
         }
       </div>
       <div className="text-block">

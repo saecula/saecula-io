@@ -2,16 +2,16 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 
 .header {
-  border-bottom: 1px solid #26336b;
+  background-color: var(--panel-color);
 }
 
 .footer {
+  border-top: var(--border);
   color: var(--subtext-color);
-  flex-shrink: 0;
 }
 
 .group {
@@ -19,5 +19,5 @@
 }
 
 .group > * {
-  margin: auto 0.4rem;
+  margin: auto 0.5rem;
 }

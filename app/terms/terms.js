@@ -42,7 +42,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div data-custom-class="body_text"
         style="font-size:11.0pt;font-family:Arial,Calibri;">
         <br/>
-        <bdt class="question"><strong>saecula.io was created with the sole intention of providing a way for me to fuck
+        <bdt class="question"><strong>saecula.io was created with the sole intention of providing a way for me to mess
             around with various technologies in a public manner. No concrete value whatsoever should be expected as a result of this activity.</strong></bdt>
         <br/><br/>
     </div>

@@ -7,12 +7,12 @@ const iconSize = 38;
 
 const Header = () => (
   <header className={styles.header}>
-    <div id="home" className={styles.group}>
-      <Link href="/">
+    <Link href="/">
+      <div id="home" className={styles.group}>
         <img src="/mascot.svg" width={iconSize} height={iconSize} />
-      </Link>
-      <div>saecula.io</div>
-    </div>
+        <div>saecula.io</div>
+      </div>
+    </Link>
     <div id="dummy" className={styles.group}>
       <img src="/login.svg" width={iconSize} height={iconSize} />
     </div>
