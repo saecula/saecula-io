@@ -17,12 +17,23 @@ export default () => {
   return (
     <div className={styles.page}>
       <div className={styles.intro}>
-        <img src="/intro.svg" alt="Hi, I'm Kathleen." width={300} height={45} />
-        <div className={styles.arrow}>
-          <svg viewBox="0 0 100 100">
-            <path d="M 0,0 L 50,50 L 100,0" />
-          </svg>
+        <div>
+          <div className={styles.pad} />
+          <img
+            src="/intro.svg"
+            alt="Hi, I'm Kathleen."
+            width={300}
+            height={45}
+          />
         </div>
+        <svg
+          width={30}
+          height={30}
+          className={styles.arrow}
+          viewBox="0 0 100 100"
+        >
+          <path d="M 0,0 L 50,40 L 100,0" />
+        </svg>
       </div>
       <div className={styles.links}>
         <Icon href={inUrl} src="/in.svg" />
