@@ -7,7 +7,7 @@
 .page {
   height: 100%;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   width: 90%;
   margin: 0 auto;
 }
@@ -36,15 +36,15 @@
 }
 
 .fade1 {
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .fade2 {
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 .fade3 {
-  animation-delay: 8.5s;
+  animation-delay: 7.5s;
   justify-content: flex-end;
 }
 

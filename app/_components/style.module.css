@@ -10,7 +10,7 @@
 }
 
 .footer {
-  border-top: 2px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
   color: var(--subtext-color);
 }
 
