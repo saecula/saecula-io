@@ -54,8 +54,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div data-custom-class="body_text"><span
             style="font-size:11.0pt;font-family:Arial,Calibri;">You can contact us by
             <bdt class="block-component">email
-                at <bdt class="question">admin@saecula.io</bdt>
-                <bdt class="block-component"></bdt>.
+                at <bdt class="question">admin@saecula.io</bdt>.
         </span></div>
     <div style="line-height: 1;"><br></div>
     <div data-custom-class="body_text"><span

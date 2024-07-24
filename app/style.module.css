@@ -21,8 +21,9 @@
 
 .fadegroup,
 .fadegroup > * {
+  width: 90%;
+  margin: 0 auto;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -33,31 +34,28 @@
 }
 
 .fade1 {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .fade2 {
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 .fade3 {
-  animation-delay: 9s;
+  animation-delay: 8.5s;
 }
 
 .calltoaction,
 .calltoaction > * {
+  display: inline-block;
   font-size: 16px;
   color: var(--subtext-color);
-}
-
-.calltoaction {
-  margin: 3rem 0 0;
 }
 
 .calltoaction a {
   text-decoration: underline;
   text-underline-offset: 3px;
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
 .calltoaction a:hover {
