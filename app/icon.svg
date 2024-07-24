@@ -4,13 +4,13 @@
    height="425"
    viewBox="0 0 512 425"
    xmlns="http://www.w3.org/2000/svg">
-  <style>
+  <style type="text/css">
       path {
-         stroke: black;
+         stroke: #181a1b;
       }
       @media (prefers-color-scheme: dark) {
          path {
-         stroke: white;
+         stroke: #e3e3e3;
          }
       }
    </style>

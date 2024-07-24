@@ -1,0 +1,28 @@
+.header,
+.footer,
+.header *,
+.footer * {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: var(--panel-color);
+}
+
+.footer {
+  border-top: 2px solid var(--accent-color);
+  color: var(--subtext-color);
+}
+
+.group {
+  padding: 1rem 0;
+}
+
+.group > * {
+  margin: auto 0.5rem;
+}
+
+.title {
+  font-size: 15px;
+}

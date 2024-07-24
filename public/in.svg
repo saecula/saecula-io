@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created for saecula.io with Inkscape (http://www.inkscape.org/) -->
+<svg width="512" height="512" version="1.1" viewBox="0 0 135.467 135.467" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+		path, circle {
+		stroke: #181a1b;
+		fill: #181a1b;
+		}
+		rect {
+		stroke: #181a1b;
+		}
+		@media (prefers-color-scheme: dark) {
+		path, circle {
+		stroke: #e3e3e3;
+		fill: #e3e3e3;
+		}
+		rect {
+		stroke: #e3e3e3;
+		}
+		}
+	</style>
+	<g transform="translate(41.2636 24.2912)">
+		<g transform="matrix(2.77709 0 0 2.77709 -37.3826 -16.2113)" stroke-linecap="square" stroke-width="2.34148">
+			<path d="m7.10467 17.6847h6.91827v22.3457h-6.91827z" stroke-width=".0952736" vector-effect="non-scaling-stroke" />
+			<g>
+				<circle cx="10.5638" cy="10.7584" r="4.13312" stroke-width=".0952736" vector-effect="non-scaling-stroke" />
+				<path d="m25.2974 28.8576c0-6.26177 7.66679-6.29563 7.66679 0.02177l-0.05987 11.1511h7.0762l-1e-6 -12.367c0-13.2358-13.8984-10.7292-14.6831-6.67072m-7.13517-3.30802h7.13517v22.3457h-7.13517z" stroke-width=".0952736" vector-effect="non-scaling-stroke" />
+				<rect x="-.264383" y="-1.7764" width="46.5139" height="46.5139" rx="4.09368" ry="4.09368" fill="none" stroke-width="2.26621" />
+			</g>
+		</g>
+	</g>
+</svg>

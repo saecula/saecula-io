@@ -13,7 +13,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div style="line-height: 1.1;"><br></div>
     <div style="line-height: 115%;"><br></div>
     <div style="line-height: 115%;"><br></div>
-    <div><strong><span data-custom-class="heading_1">Agreement to legal terms, aka covering my butt:</span></strong>
+    <div><strong><span data-custom-class="heading_1">Agreement to legal terms:</span></strong>
     </div>
 </div>
 <div style="text-align: left;">
@@ -42,9 +42,8 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div data-custom-class="body_text"
         style="font-size:11.0pt;font-family:Arial,Calibri;">
         <br/>
-        <bdt class="question"><strong>saecula.io was created with the sole intention of providing a way for me to fuck
-            around with various technologies in a public manner. No goods, services, benefits, or detriments to the
-            world in any form is to be expected as a result of this activity.</strong></bdt>
+        <bdt class="question"><strong>saecula.io was created with the sole intention of providing a way for me to mess
+            around with various technologies in a public manner. No concrete value whatsoever should be expected as a result of this activity.</strong></bdt>
         <br/><br/>
     </div>
     <div data-custom-class="body_text"><span
@@ -55,8 +54,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div data-custom-class="body_text"><span
             style="font-size:11.0pt;font-family:Arial,Calibri;">You can contact us by
             <bdt class="block-component">email
-                at <bdt class="question">admin@saecula.io</bdt>
-                <bdt class="block-component"></bdt>.
+                at <bdt class="question">admin@saecula.io</bdt>.
         </span></div>
     <div style="line-height: 1;"><br></div>
     <div data-custom-class="body_text"><span
@@ -1870,7 +1868,7 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
                 </strong></span></strong></div>
 </div>
 </div>
-<style>
+<style type="text/css">
     ul {
         list-style-type: square;
     }
