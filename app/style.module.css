@@ -1,62 +1,98 @@
-.page {
+.page,
+.page * {
   display: flex;
-  height: 100%;
-  padding: 0.5rem;
-  flex-direction: column;
-  overflow: hidden;
-  justify-content: center;
+  font-size: 18px;
 }
 
-/* children of .page */
+.page {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page > * {
+  justify-content: center;
+}
 
 .intro {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  margin: 3rem 0;
 }
 
-.links {
-  display: flex;
-  justify-content: center;
+.fadegroup,
+.fadegroup > * {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* children of .intro */
+.fadegroup > * {
+  margin: 1.5rem 0;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
 
-.pad {
-  height: 150px;
+.fade1 {
+  animation-delay: 3s;
+}
+
+.fade2 {
+  animation-delay: 6s;
+}
+
+.fade3 {
+  animation-delay: 9s;
+}
+
+.calltoaction,
+.calltoaction > * {
+  font-size: 16px;
+  color: var(--subtext-color);
+}
+
+.calltoaction {
+  margin: 3rem 0 0;
+}
+
+.calltoaction a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 5px;
+}
+
+.calltoaction a:hover {
+  color: var(--color);
+  animation: fade-in-bright 0.5s ease-in-out;
 }
 
 .arrow {
-  margin: 100px 0 0;
+  margin: 1.5rem 0 0;
   fill: none;
-  stroke: var(--color);
-  stroke-width: 8;
-  opacity: 0;
-  animation:
-    fadeIn 1s ease-in-out 3.5s forwards,
-    bounce-down 0.5s ease-in-out 4.5s 4 alternate;
-  @media (prefers-color-scheme: dark) {
-    stroke: rgb(93, 93, 93);
-  }
+  stroke: var(--subtext-color);
+  stroke-width: 6;
+  animation: bounce-down 0.5s ease-in-out 9s 4 alternate;
 }
-
-/* children of .links */
 
 .links > * {
   margin: 1.5rem;
   padding: 10px;
 }
 
-/* animations */
-
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fade-in-bright {
+  from {
+    color: var(--subtext-color);
+  }
+  to {
+    color: var(--color);
   }
 }
 

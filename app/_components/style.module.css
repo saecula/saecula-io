@@ -1,27 +1,28 @@
 .header,
-.footer {
+.footer,
+.header *,
+.footer * {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 .header {
   background-color: var(--panel-color);
 }
 
-.title {
-  font-size: 15px;
-}
-
 .footer {
-  border-top: var(--border);
+  border-top: 2px solid var(--accent-color);
   color: var(--subtext-color);
 }
 
 .group {
-  display: flex;
+  padding: 1rem 0;
 }
 
 .group > * {
   margin: auto 0.5rem;
+}
+
+.title {
+  font-size: 15px;
 }
