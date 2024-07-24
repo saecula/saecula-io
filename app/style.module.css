@@ -2,7 +2,7 @@
   height: 100%;
   max-width: 900px;
   margin: auto;
-  padding: 2rem 0.5rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -11,18 +11,36 @@
 }
 
 .page > * {
-  height: 40%;
-  margin: 2rem 0;
-  padding: 15px;
-  background-color: var(--panel-color);
   border-radius: 4px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.intro {
+  height: 80%;
+}
+
 .links {
   margin: 0;
+  justify-content: center;
+}
+
+.links > * {
   padding: 0 2rem;
-  background-color: transparent;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.arrow > * {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: 8;
+
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--color-dark);
+  }
 }

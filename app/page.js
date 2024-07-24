@@ -3,41 +3,31 @@ import Link from 'next/link';
 
 import styles from './style.module.css';
 
-const iconSize = 50;
-const writingWidth = 300;
-const writingHeight = 35;
+const inUrl = 'https://www.linkedin.com/in/saecula';
+const ghUrl = 'https://www.github.com/saecula';
+const xUrl = 'https://www.x.com/_saecula';
 
 const Icon = ({ href, src }) => (
   <Link href={href} target="_blank" rel="noopener noreferrer">
-    <img src={src} width={iconSize} height={iconSize} />
+    <img src={src} width={45} height={45} />
   </Link>
 );
 
 export default () => {
   return (
     <div className={styles.page}>
-      <div>
-        <img
-          src="/blog.svg"
-          alt="blog"
-          width={writingWidth}
-          height={writingHeight + 10}
-        />
-        <div style={{ width: writingWidth }} />
-      </div>
-      <div>
-        <img
-          src="/about.svg"
-          alt="about"
-          width={writingWidth}
-          height={writingHeight}
-        />
-        <div style={{ width: writingWidth }} />
+      <div className={styles.intro}>
+        <img src="/intro.svg" alt="Hi, I'm Kathleen." width={300} height={45} />
+        <div className={styles.arrow}>
+          <svg viewBox="0 0 100 100">
+            <path d="M 0,0 L 50,50 L 100,0" />
+          </svg>
+        </div>
       </div>
       <div className={styles.links}>
-        <Icon href="https://www.linkedin.com/in/saecula/" src="/in.svg" />
-        <Icon href="https://www.github.com/saecula" src="/gh.svg" />
-        <Icon href="https://www.x.com/_saecula" src="/x.svg" />
+        <Icon href={inUrl} src="/in.svg" />
+        <Icon href={ghUrl} src="/gh.svg" />
+        <Icon href={xUrl} src="/x.svg" />
       </div>
     </div>
   );

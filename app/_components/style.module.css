@@ -9,6 +9,10 @@
   background-color: var(--panel-color);
 }
 
+.title {
+  font-size: 15px;
+}
+
 .footer {
   border-top: var(--border);
   color: var(--subtext-color);
