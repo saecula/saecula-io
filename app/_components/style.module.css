@@ -1,8 +1,7 @@
 .header,
-.footer,
-.header *,
-.footer * {
+.footer {
   display: flex;
+  padding: 0 0.5rem;
   justify-content: space-between;
 }
 
@@ -16,11 +15,19 @@
 }
 
 .group {
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.group > * {
-  margin: auto 0.5rem;
+.group > a,
+.group > div {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.group img {
+  margin: 0.7rem;
 }
 
 .title {

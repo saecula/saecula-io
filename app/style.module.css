@@ -8,6 +8,8 @@
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .page > * {
@@ -16,19 +18,19 @@
 
 .intro {
   align-items: center;
-  margin: 3rem 0;
-}
-
-.fadegroup,
-.fadegroup > * {
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fadegroup > * {
   margin: 1.5rem 0;
+}
+
+.fadegroup {
+  flex-direction: column;
+}
+
+.fadegroup > * {
+  margin: 1rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
   opacity: 0;
   animation: fade-in 1s ease-in-out forwards;
 }
@@ -43,6 +45,11 @@
 
 .fade3 {
   animation-delay: 8.5s;
+  justify-content: flex-end;
+}
+
+.calltoaction {
+  margin-top: 2rem;
 }
 
 .calltoaction,
@@ -55,7 +62,6 @@
 .calltoaction a {
   text-decoration: underline;
   text-underline-offset: 3px;
-  margin-left: 1px;
 }
 
 .calltoaction a:hover {
