@@ -12,18 +12,18 @@ const xUrl = 'https://www.x.com/_saecula';
 
 const Fade1 = ({ animate }) => (
   <div
-    className={animate ? styles.fade1 : styles.quickfade}
+    className={animate ? styles.fade1 : styles.quickfade1}
   >{`I'm good at picturing systems as their simplest moving parts.`}</div>
 );
 
 const Fade2 = ({ animate }) => (
   <div
-    className={animate ? styles.fade2 : styles.quickfade}
+    className={animate ? styles.fade2 : styles.quickfade1}
   >{`I enjoy using this to build gadgets that solve real-world problems really well.`}</div>
 );
 
 const Fade3 = ({ animate }) => (
-  <div className={animate ? styles.fade3 : styles.quickfade}>
+  <div className={animate ? styles.fade3 : styles.quickfade2}>
     <div className={styles.calltoaction}>
       Feel free to <Link href={mailto}>email me</Link>, check out my{' '}
       <Link target="_blank" rel="noopener noreferrer" href={resumeUrl}>
