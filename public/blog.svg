@@ -3,11 +3,11 @@
 <svg width="148.608mm" height="21.1066mm" version="1.1" viewBox="0 0 148.608 21.1066" xmlns="http://www.w3.org/2000/svg">
 	<style type="text/css">
 		path {
-		stroke: #181a1b;
+		stroke: #222222;
 		}
 		@media (prefers-color-scheme: dark) {
 		path {
-		stroke: #e3e3e3;
+		stroke: #eaebed;
 		}
 		}
 	</style>

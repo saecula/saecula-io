@@ -6,11 +6,11 @@
    xmlns="http://www.w3.org/2000/svg">
   <style type="text/css">
       path {
-         stroke: #181a1b;
+         stroke: #222222;
       }
       @media (prefers-color-scheme: dark) {
          path {
-         stroke: #e3e3e3;
+         stroke: #eaebed;
          }
       }
    </style>
