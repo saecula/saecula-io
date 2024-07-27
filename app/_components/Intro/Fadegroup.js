@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import Icon from './Icon';
@@ -22,7 +24,7 @@ const Fade2 = ({ animate }) => (
   >{`I enjoy using this to build gadgets that solve real-world problems really well.`}</div>
 );
 
-const Fade3 = ({ animate }) => (
+const CallToAction = ({ animate }) => (
   <div className={animate ? styles.fade3 : styles.quickfade2}>
     <div className={styles.calltoaction}>
       Feel free to <Link href={mailto}>email me</Link>, check out my{' '}
@@ -47,12 +49,23 @@ const Fade3 = ({ animate }) => (
   </div>
 );
 
-const Fadegroup = ({ animate }) => {
+const Fadegroup = () => {
+  const [animate, setAnimate] = useState(true);
+
+  useEffect(() => {
+    const animationSeen = localStorage.getItem('animationSeen');
+    if (animationSeen) {
+      setAnimate(false);
+    } else {
+      localStorage.setItem('animationSeen', true);
+    }
+  }, []);
+
   return (
     <div className={styles.fadegroup}>
       <Fade1 animate={animate} />
       <Fade2 animate={animate} />
-      <Fade3 animate={animate} />
+      <CallToAction animate={animate} />
     </div>
   );
 };

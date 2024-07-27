@@ -1,0 +1,11 @@
+.tree {
+  position: absolute;
+  bottom: 53px;
+  left: 300px;
+}
+
+.leaf {
+  position: absolute;
+  bottom: 99px;
+  right: 50%;
+}
