@@ -1,11 +1,13 @@
 .tree {
-  position: absolute;
-  bottom: 53px;
-  left: 300px;
+  display: none;
 }
 
-.leaf {
-  position: absolute;
-  bottom: 99px;
-  right: 50%;
+@media (min-width: 1000px) {
+  .tree {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    bottom: 53px;
+    left: 20%;
+  }
 }

@@ -1,5 +1,5 @@
 .page,
-.page * {
+.page > * {
   display: flex;
   font-size: 18px;
 }
@@ -12,6 +12,6 @@
   margin: 0 auto;
 }
 
-.page > * {
+.page * {
   justify-content: center;
 }
