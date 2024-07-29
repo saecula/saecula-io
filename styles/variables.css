@@ -10,7 +10,7 @@
   --background-color-dark: #1e1e1e;
 
   --panel-color-light: #efeff0;
-  --panel-color-dark: #2a2c31;
+  --panel-color-dark: #2a2c31; /*  4d505a  */
 
   --color: var(--color-light);
   --background-color: var(--background-color-light);
