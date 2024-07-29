@@ -43,7 +43,7 @@ const TreeOld = () => {
 const Tree = () => {
   return (
     <div className={styles.tree}>
-      <img src="/tree.svg" width={100} height={200} />
+      <img src="/tree.svg" width={100} height={150} />
     </div>
   );
 };

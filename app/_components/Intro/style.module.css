@@ -1,9 +1,12 @@
 .intro {
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 1.5rem 0;
 }
 
 .fadegroup {
+  display: flex;
   flex-direction: column;
 }
 
@@ -38,10 +41,11 @@
 }
 
 .calltoaction {
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
 }
 
-.calltoaction,
 .calltoaction > * {
   display: inline-block;
   font-size: 16px;
@@ -72,6 +76,11 @@
   stroke: var(--subtext-color);
   stroke-width: 6;
   animation: bounce-down 0.3s ease-in-out 8 alternate;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
 }
 
 .links > * {

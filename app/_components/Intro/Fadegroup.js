@@ -27,11 +27,13 @@ const Fade2 = ({ animate }) => (
 const CallToAction = ({ animate }) => (
   <div className={animate ? styles.fade3 : styles.quickfade2}>
     <div className={styles.calltoaction}>
-      Feel free to <Link href={mailto}>email me</Link>, check out my{' '}
-      <Link target="_blank" rel="noopener noreferrer" href={resumeUrl}>
-        resume
-      </Link>
-      , or visit one of the links below.
+      <div>
+        Feel free to <Link href={mailto}>email me</Link>, check out my{' '}
+        <Link target="_blank" rel="noopener noreferrer" href={resumeUrl}>
+          resume
+        </Link>
+        , or visit one of the links below.
+      </div>
     </div>
     <svg
       width={30}

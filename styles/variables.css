@@ -1,11 +1,10 @@
 :root {
+  --accent-color: blue;
+
   --subtext-color: #808080;
 
   --color-light: #222222;
   --color-dark: #eaebed;
-
-  --accent-color-light: #456aff;
-  --accent-color-dark: #0b2db7;
 
   --background-color-light: #fefefe;
   --background-color-dark: #1e1e1e;
@@ -14,7 +13,6 @@
   --panel-color-dark: #2a2c31;
 
   --color: var(--color-light);
-  --accent-color: var(--accent-color-light);
   --background-color: var(--background-color-light);
   --panel-color: var(--panel-color-light);
 }
@@ -22,7 +20,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color: var(--color-dark);
-    --accent-color: var(--accent-color-dark);
     --background-color: var(--background-color-dark);
     --panel-color: var(--panel-color-dark);
   }

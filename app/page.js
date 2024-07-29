@@ -9,7 +9,7 @@ import styles from './style.module.css';
 export default () => {
   return (
     <div className={styles.page}>
-      <Tree />
+      {/* <Tree /> */}
       <Intro />
     </div>
   );

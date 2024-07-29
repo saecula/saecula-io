@@ -1,13 +1,7 @@
 .tree {
-  display: none;
-}
-
-@media (min-width: 1000px) {
-  .tree {
-    position: absolute;
-    width: 100px;
-    height: 200px;
-    bottom: 53px;
-    left: 20%;
-  }
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  bottom: 2px;
+  left: 18%; /* not sure about this at all */
 }
