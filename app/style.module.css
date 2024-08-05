@@ -76,6 +76,11 @@
   animation: fade-in-bright 0.5s ease-in-out;
 }
 
+.calltoaction a:not(:hover) {
+  color: var(--subtext-color);
+  animation: fade-out-bright 0.5s ease-in-out;
+}
+
 .arrow {
   margin: 1.5rem 0 0;
   fill: none;
@@ -112,6 +117,15 @@
   }
   to {
     color: var(--color);
+  }
+}
+
+@keyframes fade-out-bright {
+  from {
+    color: var(--color);
+  }
+  to {
+    color: var(--subtext-color);
   }
 }
 
