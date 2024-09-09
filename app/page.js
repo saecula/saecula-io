@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+import Gated from './_components/Gated';
+
 import styles from './style.module.css';
 
 const mailto = 'mailto:kathleen.r.gilbert.0@gmail.com';
@@ -75,6 +77,7 @@ export default () => {
         <Fade2 animate={animate} />
         <Fade3 animate={animate} />
       </div>
+      <Gated />
     </div>
   );
 };

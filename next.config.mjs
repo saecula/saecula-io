@@ -1,15 +1,7 @@
 import analyzer from '@next/bundle-analyzer';
 
 const config = {
-  output: 'export',
   images: {
-    // not currently needed, but who knows
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'saecula.io',
-      },
-    ],
     dangerouslyAllowSVG: true,
   },
 };

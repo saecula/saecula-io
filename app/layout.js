@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { SessionProvider } from 'next-auth/react';
 import { Inter } from 'next/font/google';
 
 import Header from './_components/Header';
@@ -17,9 +20,11 @@ export default ({ children }) => {
         <meta name="description" content="this is kashi's website" />
       </head>
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <SessionProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </SessionProvider>
       </body>
     </html>
   );
