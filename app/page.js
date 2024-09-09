@@ -19,7 +19,7 @@ const Fade1 = ({ animate }) => (
 const Fade2 = ({ animate }) => (
   <div
     className={animate ? styles.fade2 : styles.quickfade1}
-  >{`I enjoy using this to build gadgets that solve real-world problems really well.`}</div>
+  >{`I enjoy using this to build things that solve real-world problems really well.`}</div>
 );
 
 const Fade3 = ({ animate }) => (
