@@ -21,86 +21,46 @@
   margin: 1.5rem 0;
 }
 
-.fadegroup {
-  flex-direction: column;
+/* Header and Footer */
+
+.header,
+.footer {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
 }
 
-.fadegroup > * {
-  margin: 1rem 0;
-  text-align: center;
+.header {
+  background-color: var(--panel-color);
+}
+
+.footer {
+  border-top: 1px solid var(--accent-color);
+  color: var(--subtext-color);
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.group > a,
+.group > div {
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  opacity: 0;
-  animation: fade-in 1s ease-in-out forwards;
+  padding: 1rem 0.5rem;
 }
 
-.fade1 {
-  animation-delay: 1.5s;
+.group img {
+  margin: 0.7rem;
 }
 
-.fade2 {
-  animation-delay: 4s;
+.greeting {
+  animation: fade-in 0.3s ease-in-out forwards;
 }
 
-.fade3 {
-  animation-delay: 7.5s;
-}
-
-.quickfade1 {
-  animation-delay: 0.5s;
-}
-
-.quickfade2 {
-  animation-delay: 1s;
-}
-
-.calltoaction {
-  margin-top: 2rem;
-}
-
-.calltoaction,
-.calltoaction > * {
-  display: inline-block;
-  font-size: 16px;
-  color: var(--subtext-color);
-}
-
-.calltoaction a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.calltoaction a:hover {
-  color: var(--color);
-  animation: fade-in-bright 0.5s ease-in-out;
-}
-
-.calltoaction a:not(:hover) {
-  color: var(--subtext-color);
-  animation: fade-out-bright 0.5s ease-in-out;
-}
-
-.arrow {
-  margin: 1.5rem 0 0;
-  fill: none;
-  stroke: var(--subtext-color);
-  stroke-width: 6;
-  animation: bounce-down 0.3s ease-in-out 32 alternate;
-}
-
-.quickarrow {
-  margin: 1.5rem 0 0;
-  fill: none;
-  stroke: var(--subtext-color);
-  stroke-width: 6;
-  animation: bounce-down 0.3s ease-in-out 8 alternate;
-}
-
-.links > * {
-  margin: 1.5rem;
-  padding: 10px;
-}
+/* keyframes */
 
 @keyframes fade-in {
   from {
@@ -108,32 +68,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes fade-in-bright {
-  from {
-    color: var(--subtext-color);
-  }
-  to {
-    color: var(--color);
-  }
-}
-
-@keyframes fade-out-bright {
-  from {
-    color: var(--color);
-  }
-  to {
-    color: var(--subtext-color);
-  }
-}
-
-@keyframes bounce-down {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(4px);
   }
 }
