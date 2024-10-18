@@ -1,8 +1,7 @@
+'use client';
+
 import React from 'react';
 import { Inter } from 'next/font/google';
-
-import Header from './_components/Header';
-import Footer from './_components/Footer';
 
 import '../styles/variables.css';
 import '../styles/globals.css';
@@ -17,9 +16,7 @@ export default ({ children }) => {
         <meta name="description" content="this is kashi's website" />
       </head>
       <body className={inter.className}>
-        <Header />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

@@ -28,9 +28,9 @@ a {
   text-decoration: none;
 }
 
-/* generic text pages */
+/* text container */
 
-.text-container {
+.tc {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
@@ -38,6 +38,8 @@ a {
   justify-content: space-around;
 }
 
-.text-block {
+/* text block */
+
+.tb {
   margin: 1rem;
 }
