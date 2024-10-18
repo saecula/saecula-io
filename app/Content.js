@@ -4,7 +4,7 @@ import Splash from './_components/Splash';
 
 import styles from './style.module.css';
 
-const PageComponent = () => {
+const Content = () => {
   const [dramaticPause, setDramaticPause] = useState(true);
 
   useEffect(() => {
@@ -17,13 +17,10 @@ const PageComponent = () => {
   }, []);
 
   return (
-    <div className={styles.page}>
-      <div className={styles.intro}>
-        <img src="/intro.svg" alt="Hi, I'm Kathleen." width={300} height={45} />
-      </div>
+    <div className={styles.content}>
       <Splash dramaticPause={dramaticPause} />
     </div>
   );
 };
 
-export default PageComponent;
+export default Content;

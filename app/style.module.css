@@ -1,24 +1,19 @@
-.page,
-.page * {
-  display: flex;
-  font-size: 18px;
-}
-
 .page {
-  height: 100%;
+  display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.content,
+.content * {
+  display: flex;
+}
+
+.content {
+  flex-direction: column;
+  flex: 1;
   justify-content: center;
-  width: 90%;
   margin: 0 auto;
-}
-
-.page > * {
-  justify-content: center;
-}
-
-.intro {
-  align-items: center;
-  margin: 1.5rem 0;
 }
 
 /* Header and Footer */
@@ -32,6 +27,10 @@
 
 .header {
   background-color: var(--panel-color);
+}
+
+.greeting {
+  animation: fade-in 0.3s ease-in-out forwards;
 }
 
 .footer {
@@ -54,10 +53,6 @@
 
 .group img {
   margin: 0.7rem;
-}
-
-.greeting {
-  animation: fade-in 0.3s ease-in-out forwards;
 }
 
 /* keyframes */

@@ -6,12 +6,16 @@ import Header from './Header';
 import Footer from './Footer';
 import Content from './Content';
 
+import styles from './style.module.css';
+
 export default ({ session }) => {
   return (
     <SessionProvider session={session}>
-      <Header />
-      <Content />
-      <Footer />
+      <div className={styles.page}>
+        <Header />
+        <Content />
+        <Footer />
+      </div>
     </SessionProvider>
   );
 };
