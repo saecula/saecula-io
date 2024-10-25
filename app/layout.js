@@ -8,12 +8,15 @@ import '../styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const title = 'saecula';
+const description = "this is kashi's website";
+
 export default ({ children }) => {
   return (
     <html lang="en">
       <head>
-        <title>saecula</title>
-        <meta name="description" content="this is kashi's website" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
       </head>
       <body className={inter.className}>
         <main>{children}</main>

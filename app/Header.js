@@ -14,23 +14,19 @@ const logoutIcon = '/logout.svg';
 const login = () => signIn('google');
 const logout = () => signOut();
 const makeGreeting = (session) => {
-  if (session.status === 'unauthenticated') {
-    return {
-      greeting: '[log in]',
-      action: login,
-      icon: loggedOutIcon,
-      hoverIcon: loginIcon,
-    };
-  }
-  if (session.data?.user?.name) {
-    const greeting = 'hi, ' + session.data.user.name.split(' ')[0] + '.';
-    return { greeting, action: logout, icon: loginIcon, hoverIcon: logoutIcon };
-  }
+  const isAuthenticated = session.status !== 'unauthenticated';
+  const userName = session.data?.user?.name?.split(' ')[0];
+
   return {
-    greeting: '',
-    action: login,
-    icon: loggedOutIcon,
-    hoverIcon: loginIcon,
+    greeting:
+      isAuthenticated && userName
+        ? `hi, ${userName}.`
+        : isAuthenticated
+          ? ''
+          : '[log in]',
+    action: isAuthenticated ? logout : login,
+    icon: isAuthenticated ? loginIcon : loggedOutIcon,
+    hoverIcon: isAuthenticated ? logoutIcon : loginIcon,
   };
 };
 
