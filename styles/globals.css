@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.floatingchat-container-wrap {
+  right: 25px;
+}
+
 /* text container */
 
 .tc {
