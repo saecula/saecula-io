@@ -25,6 +25,7 @@ async function handler(req) {
     }
 
     const body = await req.json();
+
     if (!body?.user || !body?.emotion) {
       return new Response(null, { status: 400 });
     }
