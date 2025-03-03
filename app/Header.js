@@ -18,12 +18,7 @@ const makeGreeting = (session) => {
   const userName = session.data?.user?.name?.split(' ')[0];
 
   return {
-    greeting:
-      isAuthenticated && userName
-        ? `hi, ${userName}.`
-        : isAuthenticated
-          ? ''
-          : '[log in]',
+    greeting: isAuthenticated && userName ? `hi, ${userName}.` : '',
     action: isAuthenticated ? logout : login,
     icon: isAuthenticated ? loginIcon : loggedOutIcon,
     hoverIcon: isAuthenticated ? logoutIcon : loginIcon,
@@ -37,7 +32,7 @@ const Header = () => {
 
   const { greeting, action, icon, hoverIcon } = useMemo(() => {
     return makeGreeting(session);
-  }, [session]);
+  }, [session.status]);
 
   return (
     <header className={styles.header}>

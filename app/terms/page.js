@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
+import dynamic from 'next/dynamic';
 
-import terms from './terms';
+const ClientSideComponent = dynamic(() => import('./terms'), { ssr: false });
 
-export default () => {
-  return (
-    <div className="tc">
-      <div dangerouslySetInnerHTML={{ __html: terms }} />
+export default () => (
+  <div className="tc">
+    <div className="tb">
+      <ClientSideComponent />
     </div>
-  );
-};
+  </div>
+);

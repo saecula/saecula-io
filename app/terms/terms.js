@@ -1,3 +1,6 @@
+'use client';
+import React from 'react';
+
 const html = `<div data-custom-class="body" style="line-height: 1.5;">
     <div style="text-align: left;">
         <div data-custom-class="title" style="line-height: 1;">
@@ -1887,4 +1890,8 @@ const html = `<div data-custom-class="body" style="line-height: 1.5;">
 </style>
 </div>`;
 
-export default html;
+function TermsClientComponent() {
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+export default TermsClientComponent;
