@@ -1,3 +1,5 @@
+import { ulid } from 'ulid';
+
 import db from './db';
 
 const source = 'org.howwefeel.moodmeter';
@@ -35,14 +37,16 @@ export const isValid = (body) => {
     return false;
   }
 
-  return sentence[1] === 'is';
+  return sentence[1] === sentence_single[1];
 };
 
 export const format = ({ timestamp, text }) => {
   const sentence = text.split(' ');
+  const timestampMillis = parseInt(timestamp);
 
   const ultimateEmotion = {
-    timestamp,
+    timestamp: timestampMillis,
+    id: ulid(timestampMillis),
     user: sentence[0],
     emotion: sentence[sentence.length - 1].replace('.', ''),
   };
@@ -52,9 +56,10 @@ export const format = ({ timestamp, text }) => {
   }
 
   const penultimateEmotion = {
-    timestamp,
-    user: sentence[0],
+    ...ultimateEmotion,
+    id: ulid(timestampMillis),
     emotion: sentence[sentence.length - 3],
+    isFirstOfPair: true, // gambling there won't ever be more than two per update
   };
 
   return [penultimateEmotion, ultimateEmotion];
