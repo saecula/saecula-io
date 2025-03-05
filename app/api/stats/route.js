@@ -1,19 +1,5 @@
-import { initializeApp, getApps, getApp, cert } from 'firebase-admin/app';
-import { getFirestore } from 'firebase-admin/firestore';
 import { ulid } from 'ulid';
-
-const app = getApps().length
-  ? getApp()
-  : initializeApp({
-      credential: cert({
-        projectId: process.env.PROJECT_ID,
-        clientEmail: process.env.STATSDB_CLIENT_EMAIL,
-        privateKey: process.env.STATSDB_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      }),
-    });
-
-const db = getFirestore(app, 'stats');
-const emotionsCollection = db.collection('emotions');
+import { collection, isValid, format } from './emotions';
 
 const isFromMe = (req) =>
   req.headers.get(process.env.HANDSHAKE_KEY) === process.env.HANDSHAKE_VALUE;
@@ -21,24 +7,30 @@ const isFromMe = (req) =>
 async function handler(req) {
   try {
     if (!isFromMe(req)) {
+      console.warn('not from me');
+
       return new Response(null, { status: 404 });
     }
 
     const body = await req.json();
 
-    if (!body?.user || !body?.emotion) {
+    console.log('wat.', JSON.stringify(body));
+    if (!isValid(body)) {
+      console.error('invalid request:', JSON.stringify(body));
+
       return new Response(null, { status: 400 });
     }
 
-    await emotionsCollection.doc(ulid()).set({
-      user: body.user,
-      emotion: body.emotion,
-    });
+    const emotionDocs = format(body);
 
+    await Promise.all(emotionDocs.map((d) => collection.doc(ulid()).set(d)));
+
+    console.log('saved stats:', ...emotionDocs.map((d) => JSON.stringify(d)));
     return new Response(null, { status: 200 });
   } catch (error) {
     console.error('Error saving stats:', error.toString());
-    return new Response(null, { status: 400 });
+
+    return new Response(null, { status: 500 });
   }
 }
 

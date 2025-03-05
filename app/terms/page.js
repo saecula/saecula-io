@@ -2,7 +2,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const ClientSideComponent = dynamic(() => import('./terms'), { ssr: false });
+const ClientSideComponent = dynamic(() => import('./dynamic'), { ssr: false });
 
 export default () => (
   <div className="tc">
