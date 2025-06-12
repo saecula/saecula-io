@@ -11,7 +11,7 @@ const xUrl = 'https://www.x.com/_saecula';
 
 const aboutMe = [
   `I'm good at picturing systems as their simplest moving parts.`,
-  `I enjoy using this to build gadgets that solve real-world problems really well.`,
+  `I enjoy using this to build things that solve real-world problems really well.`,
 ];
 
 const CallToAction = () => (
