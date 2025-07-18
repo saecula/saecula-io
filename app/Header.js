@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
@@ -29,6 +29,7 @@ const Header = () => {
   const session = useSession();
 
   const [hover, setHover] = useState(false);
+  const timeoutRef = useRef(null);
 
   const { greeting, action, icon, hoverIcon } = useMemo(() => {
     return makeGreeting(session);
@@ -45,8 +46,15 @@ const Header = () => {
         {greeting && <div className={styles.greeting}>{greeting}</div>}
         <img
           alt="Login with Google, or logout."
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setTimeout(() => setHover(false), 300)}
+          onMouseEnter={() => {
+            if (timeoutRef.current) {
+              clearTimeout(timeoutRef.current);
+            }
+            setHover(true);
+          }}
+          onMouseLeave={() => {
+            timeoutRef.current = setTimeout(() => setHover(false), 300);
+          }}
           src={hover ? hoverIcon : icon}
           width={iconSize}
           height={iconSize}

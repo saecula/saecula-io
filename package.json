@@ -2,6 +2,18 @@
   "name": "saecula",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "homepage": "https://github.com/saecula/saecula-io#readme",
+  "bugs": {
+    "url": "https://github.com/saecula/saecula-io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saecula/saecula-io.git"
+  },
+  "license": "ISC",
+  "author": "admin@saecula.io",
+  "main": ".eslintrc.js",
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
@@ -11,7 +23,7 @@
   "dependencies": {
     "firebase": "^11.4.0",
     "firebase-admin": "^13.1.0",
-    "next": "^15.2.0",
+    "next": "^15.3.3",
     "next-auth": "^4.24.11",
     "react": "^18",
     "react-dom": "^18",
