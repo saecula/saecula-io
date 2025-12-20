@@ -1,13 +1,13 @@
 import { ulid } from 'ulid';
 
-import db from './db';
+// import db from './db';
 
 const source = 'org.howwefeel.moodmeter';
 const millis_timestamp_length = 13;
 const sentence_single = ['stats', 'is', 'feeling', 'tired.'];
 const sentence_double = ['stats', 'is', 'feeling', 'tired', '&', 'absorbed.'];
 
-export const collection = db.collection('emotions');
+export const collection = null; // db.collection('emotions');
 
 export const isValid = (body) => {
   if (

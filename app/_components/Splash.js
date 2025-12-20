@@ -19,9 +19,8 @@ const CallToAction = () => (
     Feel free to <Link href={mailto}>email me</Link>, check out my{' '}
     <Link target="_blank" rel="noopener noreferrer" href={resumeUrl}>
       resume
-    </Link>
-    , or visit one of the links below.
-  </div>
+    </Link>, or visit one of the links below.
+  </div >
 );
 
 const Arrow = ({ dramaticPause }) => (

@@ -4,6 +4,7 @@ const config = {
   images: {
     dangerouslyAllowSVG: true,
   },
+  turbopack: {},
 };
 
 const withBundleAnalyzer = analyzer({
