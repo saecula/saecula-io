@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import Discord from './Discord';
+
 import styles from './style.module.css';
 
 const mailto = 'mailto:kathleen.r.gilbert.0@gmail.com';
@@ -64,6 +66,7 @@ const Splash = ({ dramaticPause }) => (
         <CallToAction />
         <Arrow dramaticPause={dramaticPause} />
         <Links />
+        <Discord />
       </div>
     </div>
   </>
