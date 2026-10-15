@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
@@ -31,9 +31,7 @@ const Header = () => {
   const [hover, setHover] = useState(false);
   const timeoutRef = useRef(null);
 
-  const { greeting, action, icon, hoverIcon } = useMemo(() => {
-    return makeGreeting(session);
-  }, [session.status]);
+  const { greeting, action, icon, hoverIcon } = makeGreeting(session);
 
   return (
     <header className={styles.header}>

@@ -22,7 +22,10 @@ async function handler(req) {
 
     // await Promise.all(emotionDocs.map((d) => collection.doc(d.id).set(d)));
 
-    console.log('skipped saving stats:', ...emotionDocs.map((d) => JSON.stringify(d)));
+    console.log(
+      'skipped saving stats:',
+      ...emotionDocs.map((d) => JSON.stringify(d)),
+    );
     return new Response(null, { status: 200 });
   } catch (error) {
     console.error('Error saving stats:', error.toString());

@@ -13,12 +13,11 @@
   },
   "license": "ISC",
   "author": "admin@saecula.io",
-  "main": ".eslintrc.js",
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start -p 4000",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "firebase": "^11.4.0",

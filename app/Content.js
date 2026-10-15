@@ -1,19 +1,33 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useSyncExternalStore } from 'react';
 import Splash from './_components/Splash';
 
 import styles from './style.module.css';
 
+const storageKey = 'dramaticPauseSeen';
+
+// read once per page load so the snapshot stays stable while Content is mounted
+let seen =
+  typeof window !== 'undefined' && Boolean(localStorage.getItem(storageKey));
+
+const subscribe = () => () => {};
+const getSeen = () => seen;
+// the server never knows, so it always renders the dramatic version
+const getServerSeen = () => false;
+
 const Content = () => {
-  const [dramaticPause, setDramaticPause] = useState(true);
+  const dramaticPause = !useSyncExternalStore(
+    subscribe,
+    getSeen,
+    getServerSeen,
+  );
 
   useEffect(() => {
-    const dramaticPauseSeen = localStorage.getItem('dramaticPauseSeen');
-    if (dramaticPauseSeen) {
-      setDramaticPause(false);
-    } else {
-      localStorage.setItem('dramaticPauseSeen', true);
-    }
+    localStorage.setItem(storageKey, true);
+    // client-side navigation back to the home page should skip the pause
+    return () => {
+      seen = true;
+    };
   }, []);
 
   return (
